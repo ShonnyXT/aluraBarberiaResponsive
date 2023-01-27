@@ -84,7 +84,7 @@ nav a:hover{
 
 footer{
     text-align: center;
-    background: url(https://github.com/HenriqueDeCastro/BarberShop-Alura/blob/master/bg.jpg?raw=true);
+    background: url(imagenes/bg.jpg);
     padding: 40px;
 }
 
@@ -95,7 +95,7 @@ footer{
 }
 
 form{
-    margin: 40px 0;
+    margin: 40px 40px;
 }
 
 form label, form legend{
@@ -244,7 +244,31 @@ td, th{
     margin: 1em auto;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:1040px) {
+    nav{
+        margin: 20px;
+    }
+
+    .caja, .principal, .mapaContenido, .contenidoDiferenciales, .video, .productos{
+        width: auto;
+    }
+
+    .productos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productos li{
+        width: auto;
+        margin: 20px 0;
+    }
+
+    .listaDiferenciales, .imagenDiferenciales{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:560px) {
     h1{
         text-align: center;
     }
@@ -252,12 +276,8 @@ td, th{
     nav{
         position: static;
     }
-
-    .caja, .principal, .mapaContenido, .contenidoDiferenciales, .video{
-        width: auto;
-    }
-
-    .listaDiferenciales, .imagenDiferenciales{
-        width: 100%;
+    
+    .productos{
+        padding: 20px 20px;
     }
 }
